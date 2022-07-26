@@ -8,9 +8,7 @@
     </tr>
     <tr *ngfor="let satellite of satellites">
         <td>{{ satellite.name }}</td>
-        <td [class.warning]="satellite.type === 'Space Debris'">
-        {{ satellite.type}}
-        </td>
+        <td [class.warning]="satellite.isSpaceDebris()">{{ satellite.type}}</td>
         <td>{{ satellite.operational }}</td>
         <td>{{ satellite.orbitType }}</td>
         <td>{{ satellite.launchDate }}</td>
