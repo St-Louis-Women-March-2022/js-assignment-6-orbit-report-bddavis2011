@@ -12,7 +12,7 @@ import { OrbitCountsComponent } from './orbit-counts/orbit-counts.component';
     OrbitCountsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
